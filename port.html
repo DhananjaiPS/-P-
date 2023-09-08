@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,500&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        /* ?height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+         */
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(64, 3, 65);
+        height: 49px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: rgb(236, 50, 171);
+        font-size: 1.3rem;
+
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 23px 0;
+    }
+
+    .firstSection {
+        width=30%;
+        margin: 80px 0;
+    }
+
+    .leftSection {
+
+        /* background-color: red; */
+        font-size: 2.5rem;
+        margin: 39px 0;
+    }
+
+    .rightSection {
+        /* background-color: red; */
+        align-items: center;
+
+    }
+
+    .purple {
+        color: rgb(117, 8, 99);
+    }
+
+    #element {
+        color: rgb(117, 8, 99);
+    }
+
+    .SecondSection {
+        max-width: 80vmax;
+        margin: auto;
+        height: 80vh;
+    }
+
+    hr {
+        border: 0;
+        background-color: rgb(74, 26, 118);
+        height: 1px;
+        margin: 2px 123px;
+    }
+
+    .SecondSection h1 {
+        font-size: 1.9rem;
+    }
+
+    .SecondSection .box {
+        background: white;
+        width: 80vm;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+
+    .SecondSection .vertical {
+        height: 56px;
+        width: 1px;
+        background-color: white;
+        margin: 0px 93px;
+
+    }
+
+    .grey {
+        color: grey;
+    }
+
+    .image-top {
+
+        width: 58px;
+        height: 46px;
+        position: relative;
+        top: -50px;
+        left: -29px;
+    }
+    .image-top:hover{
+        size: 1.5rem;
+    }
+
+    .vertical-titel {
+        position: relative;
+        top: 33px;
+        width: 131px;
+
+    }
+
+    .vertical-desc {
+        position: relative;
+        top: 50px;
+        color: gray;
+        font-size: 9px;
+        width: 131px;
+
+    }
+
+    footer {
+        background-color: #b02d64;
+
+    }
+
+    .footer {
+        display: flex;
+        padding: 112px 23px;
+        justify-content: space-evenly;
+
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer ul li {
+        list-style: none;
+        margin: 0 23px;
+
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .footer>div {
+        width: 123px;
+    }
+
+    footer .text-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 123px;
+
+    }
+
+    footer .text-rights .logoimg {
+        height: 12px;
+        width: 22px;
+    }
+
+    .leftSection .btn {
+        background-color: #361329;
+        border-radius: 143px;
+        padding: 11px;
+        border: 2px solid white;
+        font-size: 0.4em;
+        margin: 130px 57px;
+        color: white;
+
+    }
+
+    .btn a {
+        text-decoration: none;
+        color: rgb(255, 252, 252);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .btn a:hover {
+        font-size: 1.5em;
+    }
+
+    .buttons .logoimg1 {
+        height: 12px;
+        width: 23px;
+    }
+
+    .buttons {
+        display: flex;
+    }
+    
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Dhananjai's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Serives</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, I am <span class="purple">Dhananjai</span>
+                <div>and I am a Passionate</div>
+                <!-- <div>Web Developer</div> -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <div><button class="btn"><a
+                                href="C:\Users\welcome\OneDrive\Documents\ALPHA\Resume.pdf.docx">Download Resume</a>
+                        </button></div>
+
+                    <div><button class="btn"><img src="" alt=""><a href="https://github.com/">Visit GitHub</a> </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="rightSection">
+                <img src="pic1.jpg" alt="error pic1">
+            </div>
+        </section>
+        <hr>
+        <section class="SecondSection">
+            <span class="grey">What I have done so far</span>
+            <h1>Work Exprience </h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="javalogo.png" alt="">
+                    <div class="vertical-titel">
+                        JAVA #Programmer <span class="purple">Since 2023</span>
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pic2.png" alt="">
+                    <div class="vertical-titel">
+                        HTML DEVELOPER <span class="purple">Since 2022</span>
+
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="C.png" alt="">
+                    <div class="vertical-titel">
+                        C #Programmer <span class="purple">Since 2022</span>
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="mysql.png" alt="">
+                    <div class="vertical-titel">
+                        MySQL Developer
+                        <div><span class="purple">(2019-2021)</span></div>
+
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="python.png" alt="">
+                    <div class="vertical-titel">
+                        Python #Programmer <span class="purple">(2019-2021)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="COMING SOON.png" alt="">
+                    <div class="vertical-titel">
+                        More Coming Soon
+                        <div><span class="purple">LEARNING </span></div>
+
+                    </div>
+                    <!-- <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                    </div> -->
+                </div>
+
+
+            </div>
+        </section>
+        <hr>
+        <section id="block-3" class="SecondSection">
+            <span class="grey">From where I started my Journey</span>
+            <h1>Education </h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="airforce.png" alt="">
+                    <div class="vertical-titel">
+                        AirForce Primary School,Srinagar,J&K <span class="purple">-UKG</span>
+                    </div>
+                    
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                        
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="kvs.png" alt="">
+                    <div class="vertical-titel">
+                        Kendriya vidyalaya No.2, Srinagar, J&k <div><span class="purple">I-CLASS(2009) </span></div>
+
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="kvs.png" alt="">
+                    <div class="vertical-titel">
+                        Kendriya vidyalaya Jalipa Cantt,Barmer,Rj <span class="purple"> (2009 to 2014)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="kvs.png" alt="">
+                    <div class="vertical-titel">
+                        Kendriya vidyalaya STC BSF Humhama,J&k
+                        <div><span class="purple">(2014-2017)</span></div>
+
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="kvs.png" alt="">
+                    <div class="vertical-titel">
+                        Kendriya Vidyalaya BSF Krishnanagar,WB <span class="purple"> (2017-2018)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="kvs.png" alt="">
+                    <div class="vertical-titel">
+                        Kendriya Vidyalaya No 2 KPA,WB
+                        <div><span class="purple">Since (2018 to 2021) </span></div>
+
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="aktu.png" alt="">
+                    <div class="vertical-titel">
+                        Dr.A.P.J.Abdul Kalam Technical University
+                        <div>MIT,Moradabad,UP</div>
+                        <div><span class="purple">(2022 to 2026) </span></div>
+                        <div><span class="purple">Currently </span></div>
+
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas facere Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit. Enim optio, earum rerum nulla deleniti illo alias quo. Laborum
+                        commodi repellat
+                        tempore quia asperiores ad mollitia impedit quasi cum, natus non.
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="footer-first">
+                <h3>Dhananjai's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Serives</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Serives</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Serives</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="text-rights">
+            www.dhananjaipsportfolio.co.in | All Rights Reserved <img class="logoimg" src="copyright.png" alt="">
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['#Programmer', '#Web Developer', '#Coder', '#Ethical Hacker', 'Who Enjoy quality time with peers',
+                'Software Engineer In Making', 'who is Committed to challengs'],
+            typeSpeed: 40,
+        });
+    </script>
+
+</body>
+
+</html>
